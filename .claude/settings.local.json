@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -c \"import fastapi; import sentence_transformers; import chromadb; import fitz; print\\('核心依赖 OK'\\)\")",
+      "Bash(python -c \"from backend.rag.loader import load_pdfs, chunk_texts; print\\('loader OK'\\)\")",
+      "Bash(python -c \"from backend.config import *; print\\('config OK'\\)\")",
+      "Bash(timeout 30 python -c ' *)",
+      "Bash(pip install *)",
+      "Bash(rm -rf chroma_db)",
+      "Bash(timeout 180 python -c ' *)",
+      "Bash(python *)",
+      "Bash(curl -s http://localhost:8000/api/health)",
+      "Bash(curl -s http://localhost:8000/api/rag/stats)",
+      "Bash(npx tsc *)",
+      "Bash(curl *)",
+      "Bash(npx vite *)",
+      "Bash(tasklist)",
+      "Bash(taskkill /F /PID 32932)",
+      "Bash(taskkill /F /IM python.exe)",
+      "Bash(cmd /c start.bat)",
+      "Bash(./start.bat)",
+      "Bash(grep -c \"\\\\\\\\\\\\\\\\r\")"
+    ]
+  }
+}

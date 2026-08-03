@@ -1,0 +1,129 @@
+{
+  "person": {
+    "name": "周柄材",
+    "title": "AI开发工程师",
+    "status": "应届毕业生",
+    "email": "15212394647@163.com",
+    "phone": "15212394647",
+    "location": "安徽省巢湖市",
+    "blog": "https://blog.csdn.net/qq_74437448"
+  },
+
+  "education": {
+    "school": "安徽工业大学",
+    "major": "数据科学与大数据技术",
+    "degree": "本科",
+    "period": "2022/09 - 2026/07",
+    "courses": [
+      "大数据技术原理及应用(90)",
+      "Hadoop原理及应用(93)",
+      "机器学习",
+      "深度学习",
+      "大数据实时计算",
+      "数据采集与可视化实训",
+      "计算机视觉"
+    ]
+  },
+
+  "skills": {
+    "programming": ["Python", "MySQL", "Linux"],
+    "frameworks": ["PyTorch", "Flask", "FastAPI", "PyQt5"],
+    "deep_learning": ["CNN", "ResNet", "RNN", "LSTM", "YOLO系列", "模型迁移学习", "模型微调", "模型部署"],
+    "machine_learning": ["SVM", "XGBoost", "随机森林", "sklearn"],
+    "computer_vision": ["OpenCV", "Pillow", "dlib", "人脸识别", "OCR识别", "PaddleOCR"],
+    "llm": ["Llama", "Qwen", "DeepSeek", "LLaMA Factory", "LoRA", "QLoRA", "全量微调", "RAG", "prompt工程", "向量化", "向量库检索", "上下文增强"],
+    "agent": ["LangChain", "Dify", "Agent智能体", "云端大模型API"],
+    "crawler": ["Requests", "Selenium"],
+    "other": ["SQLAlchemy", "SQLite", "MoviePy", "matplotlib", "pandas", "LabelMe", "Docker"]
+  },
+
+  "projects": [
+    {
+      "name": "大模型一体机",
+      "company": "合肥数模智能科技有限公司",
+      "role": "AI开发工程师",
+      "period": "2025/07 - 2026/06",
+      "background": "为降低高校大模型教学实验门槛，构建易用高效的大模型实验平台",
+      "tech_stack": ["FastAPI", "LLaMA Factory", "LoRA", "QLoRA", "SQLAlchemy", "SQLite", "OpenAI API"],
+      "highlights": [
+        "基于FastAPI封装LLaMA Factory底层CLI，实现LoRA/QLoRA/全量微调标准化接口",
+        "设计训练任务管理机制，SQLAlchemy+SQLite构建TrainingJob任务模型",
+        "可视化监控：解析trainer_state.json，提取epoch/loss等核心指标",
+        "统一推理代理层，兼容OpenAI调用规范，屏蔽底层多进程调度",
+        "零代码微调将配置时间从4小时降至10分钟，支持6GB显存7B模型QLoRA微调",
+        "聚合5类能力×4家服务商，成功率>99%，支撑200+并发（延迟<1.5s）"
+      ]
+    },
+    {
+      "name": "数学课堂评价分析系统",
+      "company": "合肥数模智能科技有限公司",
+      "role": "AI开发工程师",
+      "period": "2025/07 - 2026/06",
+      "background": "构建基于AI的课堂质量分析系统，实现课堂视频至多维度分析报告自动生成",
+      "tech_stack": ["Python", "MoviePy", "讯飞ASR", "DeepSeek-v3", "Qwen-plus", "pandas", "matplotlib", "阿里云DashScope"],
+      "highlights": [
+        "视频预处理：MP4转WAV，集成讯飞ASR语音识别",
+        "调用DeepSeek-v3进行文本修复与角色分配，结构化对话存储",
+        "话语分析：多标签分类覆盖4大类12子类（知识理解、表达交流等）",
+        "单次响应≤5秒，系统已正式上线并获良好反馈"
+      ]
+    },
+    {
+      "name": "汽车零部件缺陷检测与分装报警系统",
+      "company": "合肥数模智能科技有限公司",
+      "role": "AI开发工程师",
+      "period": "2025/07 - 2026/06",
+      "background": "针对机油滤芯人工检测效率低，构建自动化缺陷检测与标签识别系统",
+      "tech_stack": ["YOLOv12", "PaddleOCR", "OpenCV", "PyQt5", "Python"],
+      "highlights": [
+        "YOLOv12缺陷检测：召回率98.5%，mAP50 98%",
+        "PaddleOCR标签识别：伽马校正+自适应直方图均衡+形态学定位，准确率99.3%，单张<100ms",
+        "PyQt5可视化界面：集成相机采集、识别展示、报警查询及参数实时调整",
+        "工业级系统，获项目团队认可"
+      ]
+    },
+    {
+      "name": "道路破损智能检测（数据标注）",
+      "company": "合肥联创智慧云科技有限公司",
+      "role": "数据标注实习生",
+      "period": "2024/07 - 2024/09",
+      "background": "为高速公路、国道等路面破损检测提供智能化解决方案",
+      "tech_stack": ["LabelMe"],
+      "highlights": [
+        "使用LabelMe标注裂缝、坑槽、标线磨损等多类缺陷",
+        "标注图像超5000张，为模型训练提供高质量数据集"
+      ]
+    }
+  ],
+
+  "faq": [
+    {
+      "q": "周柄材是谁？",
+      "a": "周柄材是一名AI开发工程师，安徽工业大学数据科学与大数据技术专业应届毕业生。熟练掌握Python、深度学习、计算机视觉、大模型微调与RAG开发。拥有多项商业化AI项目实战经验，包括大模型训推一体机、课堂评价系统、工业缺陷检测等。"
+    },
+    {
+      "q": "周柄材的专业是什么？",
+      "a": "周柄材毕业于安徽工业大学，专业是数据科学与大数据技术（本科，2022/09-2026/07）。主修课程包括：大数据技术原理及应用(90分)、Hadoop原理及应用(93分)、机器学习、深度学习、大数据实时计算、数据采集与可视化实训、计算机视觉等。"
+    },
+    {
+      "q": "周柄材的教育背景",
+      "a": "周柄材就读于安徽工业大学，数据科学与大数据技术专业，本科学历，就读时间2022年9月至2026年7月。主修课程包括大数据技术原理及应用(90分)、Hadoop原理及应用(93分)、机器学习、深度学习、大数据实时计算、数据采集与可视化实训、计算机视觉等。"
+    },
+    {
+      "q": "周柄材有什么项目经验？",
+      "a": "周柄材共有4个项目经历：\n\n1. **大模型一体机**（合肥数模智能科技，AI开发工程师）：基于FastAPI封装LLaMA Factory，实现零代码大模型微调平台，将配置时间从4小时降至10分钟，支持6GB显存7B模型QLoRA微调，聚合5类能力×4家服务商，成功率>99%。\n\n2. **数学课堂评价分析系统**：集成ASR语音识别+LLM文本修复+多标签分类，实现课堂视频自动分析，单次响应≤5秒。\n\n3. **汽车零部件缺陷检测与分装报警系统**：YOLOv12缺陷检测召回率98.5%，PaddleOCR标签识别准确率99.3%，PyQt5可视化界面。\n\n4. **道路破损智能检测**（合肥联创智慧云，数据标注实习生）：LabelMe标注5000+张道路缺陷图像。"
+    },
+    {
+      "q": "周柄材掌握了哪些技术？",
+      "a": "周柄材的技术栈覆盖广泛：\n- 编程语言：Python、MySQL、Linux\n- 深度学习框架：PyTorch，可搭建CNN/ResNet/RNN/LSTM/YOLO\n- 计算机视觉：OpenCV、PaddleOCR、人脸识别、目标检测\n- 大模型：Llama/Qwen/DeepSeek微调，LoRA/QLoRA，LLaMA Factory\n- RAG：文档解析、向量化、向量库检索、上下文增强\n- Agent：LangChain、Dify、云端大模型API\n- 后端：FastAPI、Flask、SQLAlchemy\n- 其他：爬虫(Requests/Selenium)、数据标注(LabelMe)、PyQt5桌面开发"
+    },
+    {
+      "q": "大模型一体机是什么？",
+      "a": "大模型一体机是周柄材在合肥数模智能科技实习期间参与的核心项目。它是一个零代码大模型微调平台，基于FastAPI封装LLaMA Factory底层CLI能力，支持LoRA、QLoRA、全量微调、模型合并、推理启停等标准化接口。核心成果：配置时间从4小时降至10分钟，支持6GB显存完成7B模型QLoRA微调，统一推理网关聚合5类能力×4家服务商，成功率>99%，支撑200+并发（延迟<1.5s），已被纳入正式教学平台。"
+    },
+    {
+      "q": "周柄材的联系方式",
+      "a": "周柄材的联系方式：\n- 邮箱：15212394647@163.com\n- 电话：15212394647\n- 地址：安徽省巢湖市\n- CSDN博客：https://blog.csdn.net/qq_74437448（累计100+篇技术文章，阅读量10w+）"
+    }
+  ]
+}

@@ -1,0 +1,145 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base styles */
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', 'Noto Sans SC', system-ui, -apple-system, sans-serif;
+    background-color: #ffffff;
+    color: #1a1a2e;
+  }
+
+  /* Scrollbar styling */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #d1d5db;
+    border-radius: 3px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #9ca3af;
+  }
+}
+
+/* Prose overrides for chat messages */
+@layer components {
+  .prose {
+    --tw-prose-body: #334155;
+    --tw-prose-headings: #1e293b;
+    --tw-prose-links: #4c6ef5;
+    --tw-prose-bold: #1e293b;
+    --tw-prose-counters: #64748b;
+    --tw-prose-bullets: #94a3b8;
+    --tw-prose-hr: #e2e8f0;
+    --tw-prose-quotes: #334155;
+    --tw-prose-quote-borders: #4c6ef5;
+    --tw-prose-code: #4c6ef5;
+    --tw-prose-pre-code: #e2e8f0;
+    --tw-prose-pre-bg: #1e293b;
+    --tw-prose-th-borders: #cbd5e1;
+    --tw-prose-td-borders: #e2e8f0;
+    max-width: none;
+  }
+
+  .prose h1, .prose h2, .prose h3, .prose h4 {
+    font-weight: 600;
+    line-height: 1.4;
+    margin-top: 1.25em;
+    margin-bottom: 0.5em;
+  }
+
+  .prose h1 { font-size: 1.25rem; }
+  .prose h2 { font-size: 1.125rem; }
+  .prose h3 { font-size: 1rem; }
+
+  .prose p {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    line-height: 1.7;
+    font-size: 0.875rem;
+  }
+
+  .prose ul, .prose ol {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    padding-left: 1.5em;
+  }
+
+  .prose li {
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+    font-size: 0.875rem;
+    line-height: 1.6;
+  }
+
+  .prose blockquote {
+    border-left: 3px solid #4c6ef5;
+    background: #f0f4ff;
+    padding: 0.5em 1em;
+    margin: 0.75em 0;
+    border-radius: 0 6px 6px 0;
+  }
+
+  .prose hr {
+    margin: 1em 0;
+    border-color: #e2e8f0;
+  }
+
+  .prose strong {
+    font-weight: 600;
+    color: #1e293b;
+  }
+
+  .prose img {
+    border-radius: 8px;
+    max-width: 100%;
+  }
+}
+
+/* Animations */
+@layer utilities {
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  @keyframes slideUp {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 0.25s ease-out;
+  }
+
+  .animate-slide-up {
+    animation: slideUp 0.3s ease-out;
+  }
+}
+
+/* Dark mode placeholder — not active by default */
+.dark {
+  --tw-prose-body: #e2e8f0;
+  --tw-prose-headings: #f1f5f9;
+  --tw-prose-bold: #f8fafc;
+}
